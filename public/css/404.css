@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/img/coffee-beans-background-with-blank-space-vector-215670861.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-family: 'Abril Fatface',
+    cursive;
+    margin: 0;
+    color: #3b1e0dc7;
+    
+}
+.plup{
+    width: 100%;
+    height: 100%;
+    background-color: #f0d8c71e;
+}
+div.wrap_all {
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+
+}
+
+div.coloane{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60%;
+    position: relative;
+    top: 0;
+}
+
+div.coloane div{
+    width: 33%;
+}
+
+div.imgs {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.drop, .full{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+
+
+img.coffee{
+    height: 100%;
+    position: relative;
+}
+
+.drop img {
+    opacity: 1;
+    transition: transform 0.3s ease-in, opacity 0.3s;
+}
+
+
+.full img.coffee {
+    opacity: 0;
+    transform: rotateZ(180deg);
+    transition: transform 0.3s 0.1s ease-out, opacity 0.3s;
+}
+
+.imgs:hover .full img.coffee{
+    transform: rotateZ(360deg);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imgs:hover .drop img.coffee {
+    transform: rotateZ(100deg);
+    opacity: 0;  
+}
+
+.go_home{
+    opacity: 0;
+    height: 5%;
+    transition: 0.5s;
+}
+
+.imgs:hover .go_home{
+    opacity: 1;
+}
+
+
+.full{
+    position: absolute;
+}
+
+
+div.wrap_svg {
+    width: 50%;
+    margin: 0 25%;
+    height: 25%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    margin: auto 0;
+    width: auto;
+    height: 100%;
+    padding: 20px 50px;
+    transition: fill 0.2s ease;
+    fill: white;
+}
+
+svg:hover {
+    fill: #3b1e0dc7;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+
+.page_not_found{
+    margin-top: auto;
+}
+div.coloane .page_not_found div{
+    width: 100%;
+    text-align: right;
+}
+
+.page_not_found h1{
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.page_not_found h1:hover{
+    color: white;
+}
+
+
+h1,
+h2
+h3 {
+    font-family: 'Abril Fatface',
+    cursive;
+    width: auto;
+}
+
+h2{
+    text-align: right;
+    font-size: 2rem;
+}
+h3{
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.page_not_found div h1{
+    display: inline-block;
+    text-align: right;
+    margin: 20px;
+
+}
+
+.ploaie_boabe{
+    position: relative;
+    width: 100vw;
+}
+.ploaie_boabe img{
+    position: absolute;
+    width: 60px;
+    left: 20px;
+    transform: translateY(-10vh);
+    z-index: 10;
+}
+
+#prim{
+    animation: cade_boaba 6s ease-in infinite;
+}
+
+@keyframes cade_boaba{
+    0%{ transform: translateY(-10vh); }
+
+    50%{
+        transform: translateY(100vh) rotateZ(80deg);
+    }
+
+    100% {
+        transform: translateY(200vh) rotateZ(80deg);
+    }
+}

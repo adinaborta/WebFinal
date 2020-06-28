@@ -1,0 +1,253 @@
+main{
+    color: #190724;
+    position: relative;
+}
+
+.big-category{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+
+
+.little-category{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.little-category div.imagine{
+    width: 50%;
+}
+
+.little-category div.lista_bauturi{
+    width: 50%;
+    padding: 0 70px;
+    margin: auto 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.little-category div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.par{
+    text-align: left;
+    position: relative;
+    left:-100vw;
+    overflow: hidden;
+    padding: 0 1px;
+}
+
+.impar{
+    text-align: right;
+    position: relative;
+    right: -100vw;
+    overflow: hidden;
+    padding: 0 1px;
+}
+
+
+.animatie_par{
+    animation: inpar 1s forwards ease-in;
+}
+
+.animatie_impar{
+    animation: inimpar 1s both ease-in;
+}
+
+@keyframes inimpar{
+    0%{right: -100vw; transform-origin: right;}
+    100%{right: 0vw; transform-origin: right;}
+}
+@keyframes inpar{
+    100%{left: 0vw; transform-origin: left;}
+}
+
+
+
+main h1{
+    font-family: 'Alex Brush', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main h2{
+    font-family: 'Alex Brush', cursive;
+    font-size: 2rem;
+    margin:0px;
+}
+
+main h3{
+    font-family: 'Alex Brush', cursive;
+    font-size: 6rem;
+    text-align: center;
+}
+
+ul, ol{
+    list-style: decimal;
+    margin: 0px;
+    padding: 0;
+}
+
+
+
+
+div.imagine{
+    position: relative;
+    height: auto;
+    margin: auto;
+}
+
+div img.not_in_focus{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.in_focus{
+    animation: inimg 0.4s both ease-in;
+}  
+
+.not_in_focus{
+    animation: outimg 0.4s both ease-out;
+}
+
+
+
+@keyframes inimg{
+    0%{transform: rotateX(90deg); transform-origin: top;}
+    100%{transform: rotateX(0deg); transform-origin: top;}
+} 
+
+@keyframes outimg{
+    0%{transform: rotateX(0deg); transform-origin: bottom;}
+    100%{transform: rotateX(90deg); transform-origin: bottom;}
+} 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px)
+{
+    .little-category div.imagine{
+        width: 55%;
+    }
+    
+    .little-category div.lista_bauturi{
+        width: 45%;
+        padding: 0 40px;
+    }
+
+    .little-category{
+        padding: 50px 10px;
+    }
+    main h2{
+        padding: 3px 0 0 0;
+    }
+    
+}
+
+@media only screen and (max-width: 750px)
+{
+    .little-category div.imagine{
+        width: 40%;
+    }
+    
+    .little-category div.lista_bauturi{
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    .little-category div.lista_bauturi div{
+        position: relative;
+        margin: 8px 0px;
+    }
+    .little-category div.lista_bauturi div .impar{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        margin: 0px;
+    }
+
+    
+
+}
+
+
+div.pencil_div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 235, 205, 0.432);
+    z-index: 40;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.pencil{
+    width: 35px;
+}
+
+div.off.pencil_div{
+    border: solid 2px #190724;
+}
+
+div.pencil_div svg.off{
+    fill: #190724;
+    transition: 0.2s ease-in-out;
+}
+
+div.pencil_div:hover svg.off{
+    fill: #d867169a;
+}
+
+div.pencil_div.off:hover{
+    border: solid 2px #d867169a;
+}
+
+
+
+
+div.on.pencil_div {
+    border: solid 2px #d86716;
+}
+
+div.pencil_div svg.on {
+    fill: #d86716;
+    transition: 0.2s ease-in-out;
+}
+
+div.pencil_div:hover svg.on {
+    fill: #190724af;
+}
+
+div.pencil_div.on:hover {
+    border: solid 2px #190724af;
+}
+
+mark{
+    background-color: #d86716b0;
+    color: white;
+}
+

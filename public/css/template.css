@@ -1,0 +1,429 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    font-size: 14px;
+    font-family: 'Antic', sans-serif;
+    color: white;
+}
+
+::selection{
+    color: white;
+    background:  #f8771aea;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    position: relative;
+    top: 85px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+nav{
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 5px 0; 
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    background-color: #190724;
+    z-index: 2;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    transition: 1s ease;
+}
+
+nav:hover{
+    background: #2a0044;
+}
+
+
+.logo_mare{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+.logo_mic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    padding: 2.5px 0;
+}
+
+.dim_logo{
+    width: 20%;
+    margin: auto 10px;
+}
+
+.dim_a{
+    width: 16%;
+    padding: 10px;
+    margin: auto 0;
+    transition: 0.4s ease;
+}
+
+
+nav div div.under{
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+
+a:hover + div.under{
+  transform: scaleX(1);
+}
+
+
+nav p{
+    display: none;
+}
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+  }
+
+
+.dropdown-content {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  background-color: #2a0044;
+  height: 0px;
+  z-index: 5;
+  overflow: hidden;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.dropdown-content button {
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    font-family: inherit;
+    background-color: #2a0044;
+    border: none;
+    width: 100%;
+}
+
+.dropdown-content .zindex{
+    position: absolute;
+    z-index: -1;
+    top:0px;
+}
+
+.dropdown-content button:focus{
+    outline: none;
+}
+
+.dropdown-content button:hover {background-color: #190724;}
+
+.dropdown:hover .dropdown-content {height: 120px; border-top: 1px solid white;}
+
+.your_acc{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.deflexat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.liniuta{
+    width: 35vw;
+    height: 2px;
+    background: #190724;
+    margin: auto 10px;
+}
+.liniuta +div{
+    width: 30vw;
+    display: inline-block;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #d86816;
+    position: relative;
+    top:85px;
+    margin-top: 100px;
+}
+
+.date_footer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.prima_parte{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.social h2{
+        display: none;
+    }
+.date_footer{
+    flex-direction: column;
+}
+
+.prima_parte div{
+    width: 33%;
+    text-align: center;
+}
+.date_footer .social{
+    width: 100%;
+    text-align: center;
+    padding:0;
+}
+
+
+.date_footer a, .date_footer p{
+    display: block;
+    margin: 14px 0;
+}
+
+.social a{
+    display: inline-block;
+    padding: 0 5px;
+    margin: 2px 0;
+}
+
+.social img{
+    border-radius: 5px;
+}
+
+.copyright{
+    margin: 10px 20px  0  20px;
+    padding: 10px 20px  0  20px;
+    border-top: 2px solid #1907245b;
+}
+
+.copyright p{
+    margin: 0;
+}
+
+#heart{
+    width: 100%;
+    text-align: center;
+}
+#heart a{
+    margin :0 auto;
+}
+
+
+footer svg{
+    fill: #d86816;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer svg:hover{
+    fill: #2a0044;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+@media only screen and (max-width: 1000px){
+    :root{
+        font-size: 12px;
+    }
+    main{
+        top: 80px;
+    }
+    .date_footer p, .date_footer h2, .date_footer a{
+        margin: 0.4em 0;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    :root{
+        font-size: 10px;
+    }
+    nav{
+        height: 65px;
+    }
+    .logo_mare{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .logo_mic{
+        width: 60px;
+        height: 60px;
+    }
+    main{
+        top: 75px;
+    } 
+
+    .despre{
+        margin: 20px 0;
+    }
+    
+}
+@media only screen and (max-width: 710px){
+    
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    :root{
+        font-size: 8px;
+    }
+    
+    nav{
+        height: 60px;
+    }
+    .logo_mare{
+        width: 100px;
+        height: 100px;
+        padding-top: 10px;
+    }
+    
+    .logo_mic{
+        width: 55px;
+        height: 55px;
+    } 
+    main{
+        top: 70px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+    .social a, .social img{
+        width: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    :root{
+        font-size: 6px;
+    }
+    nav{
+        height: 55px;
+    }
+    .dim_a{
+        padding: 5px;
+    }
+
+    .logo_mare{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 2.5px 0;
+    }
+    
+    .logo_mic{
+        width: 50px;
+        height: 50px;
+    }
+    main{
+        position: relative;
+        top: 65px;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    .social a, .social img{
+        width: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
+    :root{
+        font-size: 4px;
+    }
+    nav{
+        height: 50px;
+    }
+
+    .dim_a{
+        padding: 2px;
+    }
+
+    .logo_mare{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        padding: 2.5px 0;
+    }
+    
+    .logo_mic{
+        width: 45px;
+        height: 45px;
+    }
+    main{
+        top: 60px;
+    }
+}

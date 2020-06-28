@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/template.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/your_acc.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+</head>
+<body>
+
+    <nav>
+        <div class="dim_logo"><img src="/img/circle-cropped.png" alt="logo" class="logo_mare logo"></div>
+        <div class="dim_a"><a href="acasa.html"> ACASA</a><div class="under"></div></div>
+        <div class="dim_a"><a href="about.html"> DESPRE NOI </a><div class="under"></div></div>
+        <div class="dim_a"><a href="contact.html"> CONTACT </a><div class="under"></div></div>
+        <div class="dim_a"><a href="artists.html"> ARTA </a><div class="under"></div></div>
+        <div class="dim_a your_acc"><a href="#"> CONTUL TAU </a><div class="under"></div></div>
+        <div class="dropdown dim_a">
+            <a href="meniu.html" class="dropbtn">MENIU</a>
+            <div class="dropdown-content">
+              <button class="option1">Cafea si Ceai</button>
+              <button class="option2">Bauturi Reci</button>
+              <button class="option3">Mancare</button>
+            </div>
+        </div>
+        
+        <p class="optiune_aleasa"></p>
+    </nav>
+
+<h1 id="adauga_foto">Adauga o fotografie</h1>
+        <div id="submit_pic">
+                <div id= "submit_link">
+                    <textarea name="link" id="link" rows="10" placeholder="Link catre poza..."></textarea>
+                    <img id= "next" src="/img/iconmonstr-arrow-28-240.png" alt="">
+                </div>
+                <div id="submit_desc">
+                    <textarea name="desc" id="desc" maxlength="400" rows="10" placeholder="Descriere..."></textarea>
+                    <img id="send" src="\img\iconmonstr-check-mark-8-240.png" alt="">
+                </div>
+        </div>
+
+    <main>
+
+        
+
+        <div class="settings">
+      
+            <div class="wrap_span">
+                <div></div>
+                <div class="liniute">
+                    <span class="left"></span>
+                    <span class="right"> </span>
+                    <span class="byee"></span>
+                </div>
+                <div></div>
+            </div>
+        
+            <div class="options">
+                <h2 onclick = "log_off()">LogOff</h2>
+                <h2 onclick = "delete_acc()">Delete Your Account</h2>
+                <h2 onclick="press_plus()" >Add a new picture</h2>
+            </div>
+        </div>
+        
+
+        <div class="wrap_all">
+            <div class=" tot deflexat off"><div class="liniuta"></div><div><h1>Uploads</h1></div><div class="liniuta"></div></div>
+            <div class="wrap_pics">
+                <img src="../img/iconmonstr-plus-6-240.png" alt="" id="plus" onclick="press_plus()">
+            </div>
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="date_footer">
+            <div class="prima_parte">
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>0733 136 163</p>
+                <p>forma_bucuresti@coffeehouse.com</p>
+            </div>
+            <div class="locatie">
+                <h2>Locatie</h2>
+                <a href="https://goo.gl/maps/aHoLmcGCDarKXSzC7">Strada Ion Ghica 4, București 030167</a>
+            </div>
+            <div class="reviews">
+                <h2>Articole si Reviews</h2>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g294458-d17610771-Reviews-Forma-Bucharest.html"> Trip Advisor</a>
+                <a href="https://www.google.com/search?safe=active&sxsrf=ALeKk00Qip3uXbMOUx1_sfOMEYcfMx8Ctw%3A1585687811718&ei=A62DXpe0K876qwGrvYDAAw&q=forma+coffee+shop+and+art+gallery+reviews&oq=forma+coffee+shop+and+art+gallery+REV&gs_lcp=CgZwc3ktYWIQAxgAMgUIIRCgATIFCCEQoAE6BAgjECc6BggAEBYQHlCaKljbM2COPWgAcAB4AIAB0QGIAYEIkgEFMC40LjKYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab#lrd=0x40b1ff71c53f35f5:0xf7b3a91b5e1501aa,1,,,"></a>
+                <a href="https://www.google.com/search?safe=active&sxsrf=ALeKk00Qip3uXbMOUx1_sfOMEYcfMx8Ctw%3A1585687811718&ei=A62DXpe0K876qwGrvYDAAw&q=forma+coffee+shop+and+art+gallery+reviews&oq=forma+coffee+shop+and+art+gallery+REV&gs_lcp=CgZwc3ktYWIQAxgAMgUIIRCgATIFCCEQoAE6BAgjECc6BggAEBYQHlCaKljbM2COPWgAcAB4AIAB0QGIAYEIkgEFMC40LjKYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab#lrd=0x40b1ff71c53f35f5:0xf7b3a91b5e1501aa,3,,,">Scrie un Review</a>
+            </div>
+            </div>
+            <div class="social">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/FORMAbucharest/"><img src="/img/iconmonstr-facebook-6-32.png" alt=""></a>
+                <a href="https://www.instagram.com/forma_bucharest/"><img src="/img/iconmonstr-instagram-13-32.png" alt=""></a>
+                <a href="https://twitter.com/4maart?lang=en"><img src="/img/iconmonstr-twitter-3-32.png" alt=""></a>
+            </div>
+            <div id="heart"><a href="/img/poza2.png"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></a></div>
+        </div>
+        <div class="copyright">
+            <p>COPYRIGHT © 2020 FORMACOFFEE.</p>
+            <p> ALL RIGHTS RESERVED FORMA COFFEE SHOP AND ART GALERY.</p>
+        </div>
+
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.13/dist/sweetalert2.all.js"></script>
+    <script src="/java_tema2/submit.js"></script>
+    <script src="/java_tema2/login.js"></script>
+    <script src="/js/comun.js"></script>
+    <script src="/js/your_acc.js"></script>
+
+    
+    
+    
+</body>
+</html>
